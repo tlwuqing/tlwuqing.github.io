@@ -455,14 +455,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-06-27
+                    2022-07-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.2k
                 </div>
                 
 
@@ -503,6 +503,12 @@
 <p>再检查npm的安装情况</p>
 <pre class="line-numbers language-none"><code class="language-none">npm -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<h2 id="安装淘宝镜像"><a href="#安装淘宝镜像" class="headerlink" title="安装淘宝镜像"></a>安装淘宝镜像</h2><p>npm是node.js的包管理工具，用于node插件管理，但是因为npm安装插件是在国外下载，所以我们需要安装淘宝镜像源，为下载提速。</p>
+<pre class="line-numbers language-none"><code class="language-none">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>检查cnpm有没有安装好</p>
+<pre class="line-numbers language-none"><code class="language-none">cnpm -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
 <h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>安装好node.js之后，我们就可以安装hexo博客框架了，首先在电脑盘里创建一个新的文件夹，可以命名为Blog。</p>
 <p>选中Blog文件夹，右击点Git Bash Here，输入下面的代码，开始全局安装hexo博客框架</p>
 <pre class="line-numbers language-none"><code class="language-none">cnpm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -533,7 +539,7 @@ hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
 <h1 id="使用git与github建立连接"><a href="#使用git与github建立连接" class="headerlink" title="使用git与github建立连接"></a>使用git与github建立连接</h1><h2 id="github创建个人仓库"><a href="#github创建个人仓库" class="headerlink" title="github创建个人仓库"></a>github创建个人仓库</h2><p>首先，你需要用邮箱注册一个github账号，点击左上角的＋号，选择new repository添加新的仓库,仓库名命名为用户名.github,io，一定得命名为“用户名.github.io”。因为这样命名可以免费生成github默认的github page页面，我们的博客就是在这个页面上显示的。</p>
 <h2 id="生成SSH公钥并添加到github中"><a href="#生成SSH公钥并添加到github中" class="headerlink" title="生成SSH公钥并添加到github中"></a>生成SSH公钥并添加到github中</h2><h2 id="生成ssh公钥"><a href="#生成ssh公钥" class="headerlink" title="生成ssh公钥"></a>生成ssh公钥</h2><p>通过git，可以将我们本地博客的内容，发送到githuab中，生成ssh公钥可以让我们不用输入密码，就能传送文件到github上。</p>
 <p>在blog文件夹中git bash，输入下面的代码，yourname为你github的用户名</p>
-<pre class="line-numbers language-none"><code class="language-none">git config --global &#96;[&#96;user.name&#96;](http:&#x2F;&#x2F;user.name)&#96; &quot;YourName&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">git config --global user.name &quot;YourName&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>然后是绑定你的邮箱，邮箱也是你github注册时使用的邮箱</p>
 <pre class="line-numbers language-none"><code class="language-none">git config --global user.email &quot;YourEmail&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -1139,7 +1145,7 @@ hexo d <span aria-hidden="true" class="line-numbers-rows"><span></span><span></s
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.2k</span>&nbsp;字
+                class="white-color">1.3k</span>&nbsp;字
             
             
             
